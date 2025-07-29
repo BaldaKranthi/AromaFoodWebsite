@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Food Order</title>
+    <link rel="stylesheet" href="./Aroma.css" />
+    <link rel="shortcut icon" href="./Assets/logo.jpg" type="image/x-icon" />
+   
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <h1 class="text-align:center;">🍕 Aroma Food Order</h1>
+     <section id="first_page">
+        <nav>
+          <aside id="nav_one">
+            <img src="./Assets/favicon.png" alt="logo" id="logo" />
+          </aside>
+          <aside id="nav_two">
+            <a href="#second_page">Menu</a>
+            <a href="#fourth_page">About</a>
+            <a href="#fifth_page">Book Table</a>
+          </aside>
+          <aside id="nav_three">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div id="cart_items">0</div>
+            <p id="price"><i class="fa-solid fa-indian-rupee-sign"></i> 0.00</p>
+          </aside>
+        </nav>
+      </section>
+      <section id="fourth_page">
+        <article id="fourth_one">
+          <h1>About Us</h1>
+        </article>
+        <article id="fourth_two">
+          <h3>Our Story - From The Start</h3>
+          <p>
+            Founded in 2010, our restaurant began as a small family-owned
+            business with a passion for serving delicious, high-quality meals.
+            Over the years, we've grown into a beloved local spot, dedicated to
+            creating memorable dining experiences using fresh, locally-sourced
+            ingredients.
+          </p>
+        </article>
+       
+      </section>
+    <section id="products">
+        <h2>Menu</h2>
+        <div class="product-list">
+          
+            <div class="product">
+                <img src="f1.png" alt="" class="food_img" width="150px" height="150px"/>
+                <h3>Crispy Paneer Pizza</h3>
+                <p>₹250</p>
+                <div>
+                 <button onclick="decreaseQty('Crispy Paneer Pizza', 250)">-</button>
+                 <span id="qty-Crispy Paneer Pizza">0</span>
+                 <button onclick="increaseQty('Crispy Paneer Pizza', 250,'f1.png')">+</button>
+                 </div>
+                
+            </div>
+            <div class="product">
+                <img src="f2.png" alt="" class="food_img" width="150px" height="150px"/>
+                <h3>Chicken Burger</h3>
+                <p>₹180</p>
+                <div>
+                 <button onclick="decreaseQty('Chicken Burger', 180)">-</button>
+                 <span id="qty-Chicken Burger">0</span>
+                 <button onclick="increaseQty('Chicken Burger', 180,'f2.png')">+</button>
+                 </div>
+            </div>
+            <div class="product">
+                <img src="f3.png" alt="" class="food_img" width="150px" height="150px"/>
+                <h3>Mexican Pizza</h3>
+                <p>₹220</p>
+                <div>
+                 <button onclick="decreaseQty('Mexican Pizza', 220)">-</button>
+                 <span id="qty-Mexican Pizza">0</span>
+                 <button onclick="increaseQty('Mexican Pizza', 220,'f3.png')">+</button>
+                 </div>
+            </div>
+             <div class="product">
+                <img src="f4.png" alt="" class="food_img" width="150px" height="150px"/>
+                <h3>Cheese Pasta</h3>
+                <p>₹200</p>
+                <div>
+                 <button onclick="decreaseQty('Cheese Pasta', 200)">-</button>
+                 <span id="qty-Cheese Pasta">0</span>
+                 <button onclick="increaseQty('Cheese Pasta', 200,'f4.png')">+</button>
+                 </div>
+            </div>
+             <div class="product">
+                <img src="f5.png" alt="" class="food_img" width="150px" height="150px"/>
+                <h3>Crispy French Fries</h3>
+                <p>₹100</p>
+                <div>
+                 <button onclick="decreaseQty('Crispy French Fries', 100)">-</button>
+                 <span id="qty-Crispy French Fries">0</span>
+                 <button onclick="increaseQty('Crispy French Fries', 100,'f5.png')">+</button>
+                 </div>
+            </div>
+             <div class="product">
+                <img src="f6.png" alt="" class="food_img" width="150px" height="150px"/>
+                <h3>Special Veg Pizza</h3>
+                <p>₹300</p>
+                <div>
+                 <button onclick="decreaseQty('Special Veg Pizza', 300)">-</button>
+                 <span id="qty-Special Veg Pizza">0</span>
+                 <button onclick="increaseQty('Special Veg Pizza', 300,'f6.png')">+</button>
+                 </div>
+            </div>
+             <div class="product">
+                <img src="f7.png" alt="" class="food_img" width="150px" height="150px"/>
+                <h3>Chicken Burgers</h3>
+                <p>₹180</p>
+                <div>
+                 <button onclick="decreaseQty('Chicken Burgers', 180)">-</button>
+                 <span id="qty-Chicken Burgers">0</span>
+                 <button onclick="increaseQty('Chicken Burgers', 180,'f7.png')">+</button>
+                 </div>
+            </div>
+             <div class="product">
+                <img src="f8.png" alt="" class="food_img" width="150px" height="150px"/>
+                <h3>Veg Peppy Burger</h3>
+                <p>₹150</p>
+                <div>
+                 <button onclick="decreaseQty('Veg Peppy Burger', 150)">-</button>
+                 <span id="qty-Veg Peppy Burger">0</span>
+                 <button onclick="increaseQty('Veg Peppy Burger', 150,'f8.png')">+</button>
+                 </div>
+            </div>
+           
+           
+        </div>
+    </section>
+     <article id="fourth_three">
+          <aside id="fourth_three_one">
+            <img
+              src="burgerWallpaper.jpg"
+              alt="Delicious burger meal"
+            />
+          </aside>
+          <aside id="fourth_three_two">
+            <h2>We Provide Good Quality Food<br />To Your Family!</h2>
+            <p>
+              At our restaurant, we believe in the power of great food to bring
+              people together. Our menu features a variety of wholesome dishes
+              crafted with care, from juicy burgers to fresh salads, all made
+              with premium ingredients. We’re committed to ensuring every meal
+              is a delightful experience for you and your loved ones.
+            </p>
+          </aside>
+        </article>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="cart-total">Total: ₹0</p>
+    </section>
+
+    <section id="customer-details">
+         
+        <h2>Customer Details</h2>
+        <input type="text" id="customerName" placeholder="Name">
+        <input type="text" id="phone" placeholder="Phone">
+        <input type="email" id="email" placeholder="Email">
+        <button onclick="placeOrder()">Place Order</button>
+        
+         
+    </section>
+     <section id="sixth_page">
+        <article id="sixth_page_one">
+            <aside id="sixth_page_one_one">
+                <h2>Contact Us</h2>
+                <p>Chaitanyapuri</p>
+                <p>Call +91-9876543210</p>
+                <p>mailto:aromaskitchen@gmail.com</p>
+            </aside>
+            <aside id="sixth_page_one_two">
+                <h2>Aromas</h2>
+                <p>Founded in 2010, our restaurant began as a small family-owned business with a passion for serving delicious, high-quality meals. Over the years, we've grown into a beloved local spot, dedicated to creating memorable dining experiences using fresh, locally-sourced ingredients.</p>
+            </aside>
+            <aside id="sixth_page_one_three">
+                <h2>Opening Hours</h2>
+                <p>Everyday</p>
+                <p>10:00am to 10:00pm</p>
+            </aside>
+        </article>
+        <article id="sixth_page_two">
+            &copy; 2025 All Rights Reserved by Aromas Kitchen
+        </article>
+      </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
