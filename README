@@ -1,0 +1,23 @@
+# Aroma Food Website
+
+## Description
+A full-stack food ordering web application that allows users to browse food items
+and place orders through a responsive frontend and a Java-based backend API.
+
+## Modules
+- **AromaFrontend**: Frontend built using HTML, CSS, and JavaScript
+- **SpringBootMongoDBOrderAPI**: Backend REST API built using Java Spring Boot and MongoDB
+
+## Tech Stack
+- Java (Spring Boot)
+- MongoDB
+- HTML, CSS, JavaScript
+
+## How to Run
+1. Run the backend from `SpringBootMongoDBOrderAPI`
+2. Open the frontend from `AromaFrontend` in a browser
+
+## Future Enhancements
+- User authentication
+- Payment integration
+- Admin dashboard
